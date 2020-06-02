@@ -67,3 +67,11 @@ You can use whatever resource you need for this project. You can use the interne
 -   Clean code (indentation, comments, clear variables and functions names)
 
 ## Good luck, and happy coding ✨
+
+## Few examples about what could be improved in this code or functionality.
+
+-    First, every statements should end in a semicolon(;)
+-    The variables had been set before being used.
+-    All the strings are being eenclosed in quotation mark, no matter whether it is double or a single quote. 
+-   Double backslashes(//) and (/* */) are used to set a comment with the code.
+-   Sometimes you may use apostrophes or a single or double quotes inside of your code, but     these might damage your code if we are not careful. Use the backslash(/) every time you escape these character to specify that the apostrophes are not type of the quote.(eg: 'I\'m not hungry yet.').   
