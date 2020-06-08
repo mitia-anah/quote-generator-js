@@ -20,8 +20,6 @@ var quotesC = [
     ["leave the town!"]
 ];
 
-
-
 //then the quotes are generated randomly here.
 
     let quoteIndex1 = Math.floor(Math.random() * quotesA.length);
@@ -31,6 +29,19 @@ var quotesC = [
 currentQuotes = quotesA[quoteIndex1] + " " + quotesB[quoteIndex2] + " " + quotesC[quoteIndex3];
 console.log(currentQuotes);
 
+//1. use prompt to ask the user how many times we want to generate a random quote
+//2. check if the prompt give us something between 1 and 5
+//3. we're going to use a loop somewhere, and it's going to last the number of times that the user entered in the prompt!
+//4. refactor our code into a function, and put the function call inside the loop
+//4.1 generate random numbers
+//4.2 show the generated quotes
 
+const quotes = prompt("How many times we want to generate a random quote?: ");
+const quoteGenerator = () => {
+    const randomNumber = quoteGenerator[Math.floor(Math.random() * 5)];
+    randomNumber;
+}
 
-
+for (let i = 1; i < 5; i++) {
+  quoteGenerator();
+  }
