@@ -49,5 +49,24 @@ if (quotes >= 1 && quotes <= 5) {
         console.log(currentQuotes);
         }
         quoteGenerator();
-    }
 }
+}
+
+var sadQuotes = [
+    "It's so hard to forget someone who gave you so much to remember.",
+    "To have felt too much is to end up feeling nothing.",
+    "Tears are words the mouth can’t say nor can the heart bear.",
+    "Let your tears come. Let them water your soul. ",
+    "Behind my smile is everything you’ll never understand."
+];
+
+var happyQuotes = [
+    "Every moment is a fresh beginning.",
+    "Aspire to inspire before we expire.",
+    "Problems are not stop signs, they are guidelines. ",
+    "When words fail, music speaks.",
+    "Try to be a rainbow in someone’s cloud."
+];
+
+const newQuotes = prompt("Enter a type of random quote you want: ");
+while (newQuotes )
