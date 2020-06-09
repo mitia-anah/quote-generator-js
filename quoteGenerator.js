@@ -3,17 +3,17 @@ var quotesA = [
     ["The more you learn the more you know something."], 
     ["Picking a piece from clump"], 
     ["Hi there!"], 
-    ["who is gonna"], 
+    ["who is going to buy me a dress"], 
     ["I will be there."]];
 var quotesB = [
     ["she has done it for a long time"],
-    ["bring them here"],
+    ["did you find my bag"],
     ["you are so fast!"],
     ["for everything"],
     ["just a moment before you arrived"]];
 
 var quotesC = [
-    ["valuable thing?"],
+    ["wow! what a beautiful flower!"],
     ["that's nice to hear!"],
     ["I don't want to be the last."],
     ["she dresses well."],
@@ -36,8 +36,9 @@ console.log(currentQuotes);
 //4.1 generate random numbers
 //4.2 show the generated quotes
 
+
 const quotes = prompt("How many times we want to generate a random quote?: ");
-if (quotes >= 1 && quotes>= 5) {
+if (quotes >= 1 && quotes <= 5) {
     for (let i = 0; i < quotes; i++) {
         const quoteGenerator = () => {
             let quoteIndex1 = Math.floor(Math.random() * quotesA.length);
@@ -48,6 +49,5 @@ if (quotes >= 1 && quotes>= 5) {
         console.log(currentQuotes);
         }
         quoteGenerator();
-        console.log(quoteGenerator);
     }
 }
