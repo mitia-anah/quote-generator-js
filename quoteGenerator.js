@@ -37,11 +37,17 @@ console.log(currentQuotes);
 //4.2 show the generated quotes
 
 const quotes = prompt("How many times we want to generate a random quote?: ");
-const quoteGenerator = () => {
-    const randomNumber = quoteGenerator[Math.floor(Math.random() * 5)];
-    randomNumber;
-}
+if (quotes >= 1 && quotes>= 5) {
+    for (let i = 0; i < quotes; i++) {
+        const quoteGenerator = () => {
+            let quoteIndex1 = Math.floor(Math.random() * quotesA.length);
+            let quoteIndex2 = Math.floor(Math.random() * quotesB.length);
+            let quoteIndex3 = Math.floor(Math.random() * quotesC.length);
 
-for (let i = 1; i < 5; i++) {
-  quoteGenerator();
-  }
+        currentQuotes = quotesA[quoteIndex1] + " " + quotesB[quoteIndex2] + " " + quotesC[quoteIndex3];
+        console.log(currentQuotes);
+        }
+        quoteGenerator();
+        console.log(quoteGenerator);
+    }
+}
