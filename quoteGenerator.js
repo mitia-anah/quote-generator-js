@@ -52,6 +52,7 @@ if (quotes >= 1 && quotes <= 5) {
 }
 }
 
+
 var sadQuotes = [
     "It's so hard to forget someone who gave you so much to remember.",
     "To have felt too much is to end up feeling nothing.",
@@ -68,5 +69,46 @@ var happyQuotes = [
     "Try to be a rainbow in someone’s cloud."
 ];
 
-const newQuotes = prompt("Enter a type of random quote you want: ");
-while (newQuotes )
+
+function quoteGenerator() {
+    let typeOfQuote1 = Math.floor((Math.random() * sadQuotes.length));
+    let random1 = sadQuotes[typeOfQuote1];
+    let typeOfQuote2 = Math.floor((Math.random() * happyQuotes.length));
+    let random2 = happyQuotes[typeOfQuote2];
+    let typeOfQuote = `${random1} ${random2}`;
+    return typeOfQuote;
+ }
+
+   
+function newQuoteGenerator() {
+    //Let the user to choose their prefering quote between 1 or 2:
+   let choiceQuote = prompt('Choose the type of quote you want: (between 1 or 2)');
+   if (choiceQuote === "1") {
+       console.log(quoteGenerator());
+     } else if (choiceQuote === "2") {
+       console.log(quoteGenerator())
+    }
+ }
+    newQuoteGenerator();
+    //Ask the user if they still want to countinue.
+    let choice = prompt('Do you want more quotes?(yes or no)');
+    if (choice === "yes") {
+    newQuoteGenerator();
+    } else if (choice === "no") {
+    alert("no problem")
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
